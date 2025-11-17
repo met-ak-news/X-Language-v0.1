@@ -1,0 +1,8 @@
+[project]
+name = "xlang-interpreter"
+version = "0.1.0"
+description = "Reference Python interpreter for X Language"
+requires-python = ">=3.10"
+
+[project.scripts]
+xcli = "xlang.cli:main"
