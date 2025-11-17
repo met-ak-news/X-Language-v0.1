@@ -1,0 +1,20 @@
+(* X Language — EBNF v0.1 *)
+program       = { statement } ;
+statement     = 'U' , ws , verb , [ ws , arguments ] , eol ;
+verb          = identifier ;
+arguments     = argument , { ws , argument } | empty ;
+argument      = path | string | number | flag | assignment ;
+assignment    = identifier , '=' , ( string | number | identifier ) ;
+flag          = '-' , identifier ;
+identifier    = letter , { letter | digit | '_' | '-' } ;
+string        = '\"' , { character } , '\"' ;
+number        = digit , { digit } ;
+path          = '/' , { character } ;
+ws            = 1*(' ' | '\t') ;
+eol           = '\n' | '\r\n' ;
+letter        = 'A'..'Z' | 'a'..'z' ;
+digit         = '0'..'9' ;
+character     = ? any printable character except '"' or control ? ;
+
+(* comments *)
+comment       = '#' , { character } , eol ;
