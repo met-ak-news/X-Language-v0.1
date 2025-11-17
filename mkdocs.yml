@@ -1,0 +1,6 @@
+site_name: X Language Docs
+nav:
+  - Home: index.md
+  - Spec: spec.md
+  - Token: whitepaper_token.md
+  - Examples: examples.md
