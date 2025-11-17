@@ -1,0 +1,13 @@
+## Repo layout
+- `/spec` — language specification and grammar
+- `/interpreter` — reference interpreter (Python)
+- `/examples` — example `.x` scripts & logs
+- `/tools` — ingestion / transform stubs
+- `/docs` — MkDocs docs
+- `LICENSE`, `CONTRIBUTING.md`, `ROADMAP.md`
+
+## Contributing
+Please open issues for language proposals and submit PRs. See CONTRIBUTING.md.
+
+## Badges
+[![CI](https://github.com/<your-org>/<repo>/actions/workflows/ci.yml/badge.svg)](https://github.com/<your-org>/<repo>/actions)
